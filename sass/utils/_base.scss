@@ -8,8 +8,12 @@ body {
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and(max-width: 735px) {
+  @media screen and(min-width: 400px) {
     width: 400px;
+  }
+
+  @media screen and(min-width:736px) {
+    width: 736px;
   }
 }
 
