@@ -22,20 +22,23 @@
 }
 
 .navegation__link {
-  padding: 2px 4px;
+  display: none;
+  @media screen and(min-width: 736px) {
+    padding: 2px 4px;
 
-  font-size: 15px;
+    font-size: 15px;
 
-  color: var(--accent-color);
-  border: 1px solid var(--accent-color);
-  border-radius: 4px;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
 
-  &:hover,
-  &:focus {
-    color: rgb(216, 109, 22);
-    border-color: var(--hover-accent-color);
-    box-shadow: var(--button-shadow);
-    font-size: 16px;
+    &:hover,
+    &:focus {
+      color: rgb(216, 109, 22);
+      border-color: var(--hover-accent-color);
+      box-shadow: var(--button-shadow);
+      font-size: 16px;
+    }
   }
 }
 
