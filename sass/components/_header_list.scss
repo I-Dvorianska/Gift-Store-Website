@@ -5,15 +5,15 @@
   width: 100%;
   height: 100vh;
 
-  @include flex(center, space-around);
+  @include flex(center, center);
   flex-direction: column;
 
   background-color: var(--secondary-text-color);
 }
 
-// .header-list__item {
-
-// }
+.header-list__item:not(:last-child) {
+  margin-bottom: 50px;
+}
 
 .header-list__link {
   font-size: 25px;
