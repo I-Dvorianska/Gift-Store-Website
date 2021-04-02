@@ -1,0 +1,18 @@
+.footer-list {
+  display: none;
+
+  @media screen and(min-width: 736px) {
+    display: flex;
+  }
+}
+
+.navegation__logo--footer {
+  display: block;
+  margin: 20px auto;
+  padding-bottom: 20px;
+  text-align: center;
+
+  border-bottom: 1px solid var(--primary-text-color);
+  width: 200px;
+  color: var(--accent-color);
+}

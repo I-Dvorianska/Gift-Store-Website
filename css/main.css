@@ -342,9 +342,9 @@ p {
 .article__caption {
   margin-top: 8px;
   padding-bottom: 5px;
-  border-bottom: 1px solid orange;
-  border-left: 1px solid orange;
-  border-right: 1px solid orange;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
   text-align: center;
 }
 
@@ -394,5 +394,27 @@ p {
   font-size: 15px;
   font-weight: 400;
   color: var(--primary-text-color);
+}
+
+.footer-list {
+  display: none;
+}
+
+@media screen and (min-width: 736px) {
+  .footer-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.navegation__logo--footer {
+  display: block;
+  margin: 20px auto;
+  padding-bottom: 20px;
+  text-align: center;
+  border-bottom: 1px solid var(--primary-text-color);
+  width: 200px;
+  color: var(--accent-color);
 }
 /*# sourceMappingURL=main.css.map */
