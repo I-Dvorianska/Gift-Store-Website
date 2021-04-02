@@ -9,10 +9,12 @@
   --background-accent: #231f20;
   --button-shadow: 0px 3px 1px #d86d1650, 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  --button-radius: 3px;
 }
 
 body {
   font-family: var(--font-family);
+  background-color: var(--secondary-text-color);
 }
 
 .container {
@@ -50,6 +52,14 @@ h3,
 h4,
 h5 {
   margin: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+.header {
+  border-bottom: 1px solid var(--accent-color);
 }
 
 .navegation {
@@ -115,9 +125,44 @@ h5 {
   fill: var(--accent-color);
 }
 
+.hero__caption {
+  padding-top: 20px;
+}
+
+.hero__title {
+  color: var(--primary-text-color);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.hero__text {
+  display: none;
+}
+
+@media screen and (min-width: 736px) {
+  .hero__text {
+    display: block;
+  }
+}
+
+.hero__link {
+  display: block;
+  width: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 7px 4px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color);
+  border-radius: var(--button-radius);
+}
+
 .hero__image-thumb {
   max-width: 370px;
   height: auto;
+  margin-top: 15px;
 }
 
 .hero__image {

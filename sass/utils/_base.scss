@@ -1,5 +1,6 @@
 body {
   font-family: var(--font-family);
+  background-color: var(--secondary-text-color);
 }
 
 .container {
@@ -32,5 +33,9 @@ h2,
 h3,
 h4,
 h5 {
+  margin: 0px;
+}
+
+p {
   margin: 0px;
 }
