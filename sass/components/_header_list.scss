@@ -1,0 +1,23 @@
+.header-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  @include flex(center, space-around);
+  flex-direction: column;
+
+  background-color: var(--secondary-text-color);
+}
+
+// .header-list__item {
+
+// }
+
+.header-list__link {
+  font-size: 25px;
+  font-weight: 600;
+
+  color: var(--accent-color);
+}
