@@ -45,6 +45,8 @@
   border: 1px solid var(--background-accent);
   border-radius: 3px;
 
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
+
   &:hover,
   &:focus {
     background-color: transparent;
@@ -62,6 +64,8 @@
   color: var(--background-accent);
   border: 1px solid var(--background-accent);
   border-radius: 3px;
+
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 
   &:hover,
   &:focus {
