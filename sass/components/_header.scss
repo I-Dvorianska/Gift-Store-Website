@@ -19,14 +19,25 @@
   &:hover {
     cursor: pointer;
   }
+
+  @media screen and(min-width: 736px) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+
+    font-size: 16px;
+  }
 }
 
 .navegation__link {
   display: none;
   @media screen and(min-width: 736px) {
-    padding: 2px 4px;
+    @include flex(center, center);
+    padding: 3px 5px;
+    width: 140px;
 
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
 
     color: var(--accent-color);
     border: 1px solid var(--accent-color);
@@ -46,6 +57,10 @@
 .mobile-menu__button {
   background-color: transparent;
   border: none;
+
+  @media screen and(min-width: 736px) {
+    display: none;
+  }
 }
 
 .navegation__icon,
