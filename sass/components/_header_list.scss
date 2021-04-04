@@ -1,14 +1,18 @@
-.header-list {
+.mobile-menu {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
 
-  @include flex(center, center);
+  display: none;
   flex-direction: column;
 
   background-color: var(--secondary-text-color);
+}
+
+.header-list {
+  text-align: center;
 }
 
 .header-list__item:not(:last-child) {
@@ -20,4 +24,8 @@
   font-weight: 600;
 
   color: var(--accent-color);
+}
+
+.mobile-menu.is-open {
+  @include flex(center, center);
 }
