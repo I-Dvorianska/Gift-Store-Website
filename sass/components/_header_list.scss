@@ -26,10 +26,6 @@
 }
 
 .header-list__item:not(:last-child) {
-  @media screen and(max-width: 735px) {
-    margin-bottom: 50px;
-  }
-
   @media screen and(min-width: 736px) {
     margin-right: 31px;
   }
