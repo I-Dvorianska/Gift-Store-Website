@@ -18,7 +18,7 @@
     flex-direction: column;
     max-width: 621px;
 
-    padding: 40px;
+    padding-right: 19px;
   }
 }
 
@@ -32,6 +32,7 @@
   margin-bottom: 25px;
 
   @media screen and(min-width: 736px) {
+    display: inline-block;
     text-align: start;
   }
 }
@@ -40,7 +41,7 @@
   display: none;
 
   @media screen and(min-width: 736px) {
-    display: block;
+    display: inline-block;
 
     font-size: 15px;
     font-weight: 400;

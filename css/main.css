@@ -275,7 +275,7 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
     max-width: 621px;
-    padding: 40px;
+    padding-right: 19px;
   }
 }
 
@@ -290,6 +290,7 @@ p {
 
 @media screen and (min-width: 736px) {
   .hero__title {
+    display: inline-block;
     text-align: start;
   }
 }
@@ -300,7 +301,7 @@ p {
 
 @media screen and (min-width: 736px) {
   .hero__text {
-    display: block;
+    display: inline-block;
     font-size: 15px;
     font-weight: 400;
   }
@@ -367,6 +368,21 @@ p {
   margin-top: 25px;
 }
 
+@media screen and (min-width: 736px) {
+  .feature {
+    margin-top: 0px;
+    background-color: var(--hero-background);
+  }
+}
+
+@media screen and (min-width: 736px) {
+  .feature__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .feature__thumb {
   display: none;
 }
@@ -374,15 +390,36 @@ p {
 @media screen and (min-width: 736px) {
   .feature__thumb {
     display: block;
+    width: 721px;
+    height: auto;
+  }
+}
+
+.feature__image {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 736px) {
+  .feature__caption {
+    width: 719px;
+    padding-top: 40px;
+    padding-left: 35px;
   }
 }
 
 .feature__title {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   text-align: center;
   font-size: 20px;
   font-weight: 600;
   color: var(--primary-text-color);
+}
+
+@media screen and (min-width: 736px) {
+  .feature__title {
+    text-align: start;
+  }
 }
 
 .feature__text {
@@ -392,6 +429,13 @@ p {
   text-align: center;
   text-indent: 5px;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 736px) {
+  .feature__text {
+    text-align: start;
+    text-indent: 0px;
+  }
 }
 
 .feature__button {
@@ -405,7 +449,7 @@ p {
   text-transform: uppercase;
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
-  background-color: var(--secondary-text-color);
+  background-color: transparent;
   border-radius: var(--button-radius);
 }
 
@@ -413,6 +457,13 @@ p {
   -webkit-box-shadow: var(--button-shadow);
           box-shadow: var(--button-shadow);
   font-size: 15px;
+}
+
+@media screen and (min-width: 736px) {
+  .feature__button {
+    display: inline-block;
+    margin: 0px;
+  }
 }
 
 .holidays {
