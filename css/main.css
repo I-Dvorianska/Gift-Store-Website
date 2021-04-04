@@ -7,6 +7,7 @@
   --hover-accent-color: #d86d16;
   --cards-backgr-color: #fafafa;
   --background-accent: #231f20;
+  --hero-background: #f1f1f2;
   --button-shadow: 0px 3px 1px #d86d1650, 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   --button-radius: 3px;
@@ -240,8 +241,42 @@ p {
           justify-content: center;
 }
 
+@media screen and (min-width: 736px) {
+  .hero {
+    background-color: var(--hero-background);
+  }
+}
+
+@media screen and (min-width: 736px) {
+  .hero__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .hero__caption {
   padding-top: 20px;
+}
+
+@media screen and (min-width: 736px) {
+  .hero__caption {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 621px;
+    padding: 40px;
+  }
 }
 
 .hero__title {
@@ -249,8 +284,14 @@ p {
   text-align: center;
   font-size: 30px;
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.14;
   margin-bottom: 25px;
+}
+
+@media screen and (min-width: 736px) {
+  .hero__title {
+    text-align: start;
+  }
 }
 
 .hero__text {
@@ -260,6 +301,8 @@ p {
 @media screen and (min-width: 736px) {
   .hero__text {
     display: block;
+    font-size: 15px;
+    font-weight: 400;
   }
 }
 
@@ -284,6 +327,13 @@ p {
   font-size: 15px;
 }
 
+@media screen and (min-width: 736px) {
+  .hero__link {
+    margin: 0px;
+    margin-top: 20px;
+  }
+}
+
 .hero__image-thumb {
   max-width: 370px;
   height: auto;
@@ -292,10 +342,25 @@ p {
   overflow: hidden;
 }
 
+@media screen and (min-width: 736px) {
+  .hero__image-thumb {
+    max-width: 719px;
+    height: auto;
+    margin-top: 0px;
+    border-radius: 0px;
+  }
+}
+
 .hero__image {
   width: 100%;
   height: 100%;
   border-radius: 3px;
+}
+
+@media screen and (min-width: 736px) {
+  .hero__image {
+    border-radius: 0px;
+  }
 }
 
 .feature {
