@@ -1,5 +1,9 @@
 .footer {
   margin-top: 30px;
+
+  @media screen and(min-width: 736px) {
+    margin-top: 50px;
+  }
 }
 
 .footer-links {
@@ -31,8 +35,8 @@
 
 .navegation__logo--footer {
   display: inline-block;
-  margin: 0px auto;
   padding-bottom: 20px;
+  margin: 0px auto;
 
   border-bottom: 1px solid var(--primary-text-color);
   width: 200px;
@@ -44,6 +48,7 @@
 
   @media screen and(min-width: 736px) {
     width: 400px;
+    margin: 0px;
   }
 }
 
