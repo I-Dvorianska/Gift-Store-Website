@@ -34,14 +34,26 @@
 .header-list__link {
   font-size: 25px;
   font-weight: 600;
+  transition: color 250ms var(--cubic);
 
   color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--hover-accent-color);
+  }
 
   @media screen and(min-width: 736px) {
     font-size: 18px;
     font-weight: 400;
 
     color: var(--primary-text-color);
+  }
+  @media screen and(min-width: 1200px) {
+    font-size: 20px;
+    &:hover,
+    &:focus {
+      color: var(--hover-accent-color);
+    }
   }
 }
 

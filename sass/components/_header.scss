@@ -26,6 +26,12 @@
 
     font-size: 16px;
   }
+  @media screen and(min-width: 1200px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+
+    font-size: 20px;
+  }
 }
 
 .navegation__link {
@@ -42,6 +48,8 @@
     color: var(--accent-color);
     border: 1px solid var(--accent-color);
     border-radius: 4px;
+    transition: color 250ms var(--cubic), border-color 250ms var(--cubic),
+      box-shadow 250ms var(--cubic), font-size 250ms var(--cubic);
 
     &:hover,
     &:focus {
@@ -49,6 +57,17 @@
       border-color: var(--hover-accent-color);
       box-shadow: var(--button-shadow);
       font-size: 16px;
+    }
+  }
+
+  @media screen and(min-width: 1200px) {
+    font-size: 16px;
+
+    padding: 6px 7px;
+    transition: font-size 250ms var(--cubic);
+    &:hover,
+    &:focus {
+      font-size: 17px;
     }
   }
 }

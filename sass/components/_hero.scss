@@ -20,6 +20,11 @@
 
     padding-right: 19px;
   }
+
+  @media screen and(min-width: 1200px) {
+    padding: 108px;
+    width: 621px;
+  }
 }
 
 .hero__title {
@@ -35,6 +40,9 @@
     display: inline-block;
     text-align: start;
   }
+  @media screen and(min-width: 1200px) {
+    font-size: 34px;
+  }
 }
 
 .hero__text {
@@ -45,6 +53,9 @@
 
     font-size: 15px;
     font-weight: 400;
+  }
+  @media screen and(min-width: 1200px) {
+    font-size: 17px;
   }
 }
 
@@ -73,6 +84,7 @@
   @media screen and(min-width: 736px) {
     margin: 0px;
     margin-top: 20px;
+    padding: 10px 6px;
   }
 }
 
