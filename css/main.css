@@ -775,6 +775,12 @@ p {
   outline: none;
 }
 
+@media screen and (min-width: 1200px) {
+  .application-list__find {
+    padding: 10px 6px;
+  }
+}
+
 .application-list__contact {
   padding: 6px 5px;
   width: 130px;
@@ -790,6 +796,12 @@ p {
   background-color: var(--background-accent);
   color: var(--secondary-text-color);
   outline: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .application-list__contact {
+    padding: 10px 6px;
+  }
 }
 
 .blog {
@@ -810,12 +822,24 @@ p {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .blog__title {
+    font-size: 28px;
+  }
+}
+
 .blog__text {
   font-size: 15px;
   font-weight: 400;
   line-height: 1.34;
   text-align: center;
   color: var(--primary-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .blog__text {
+    font-size: 17px;
+  }
 }
 
 .article {
@@ -868,6 +892,12 @@ p {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .article__caption {
+    padding: 80px 20px 49px 50px;
+  }
+}
+
 .article__author {
   font-size: 12px;
   font-weight: 400;
@@ -878,6 +908,12 @@ p {
   .article__author {
     margin-bottom: 20px;
     color: var(--secondary-text-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .article__author {
+    font-size: 14px;
   }
 }
 
@@ -914,6 +950,12 @@ p {
   font-size: 15px;
 }
 
+@media screen and (min-width: 1200px) {
+  .article__link:hover, .article__link:focus {
+    font-size: 17px;
+  }
+}
+
 @media screen and (min-width: 736px) {
   .article__link {
     text-align: start;
@@ -944,6 +986,12 @@ p {
       flex-basis: calc((100% - 60px) / 2);
 }
 
+@media screen and (min-width: 1200px) {
+  .blog-list__item {
+    padding: 40px;
+  }
+}
+
 @media screen and (max-width: 735px) {
   .blog-list__item:last-child {
     margin-top: 28px;
@@ -965,6 +1013,12 @@ p {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .blog-list__title {
+    font-size: 26px;
+  }
+}
+
 .blog-list__text {
   margin-top: 8px;
   font-size: 15px;
@@ -975,6 +1029,13 @@ p {
 @media screen and (min-width: 736px) {
   .blog-list__text {
     margin-top: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .blog-list__text {
+    font-size: 17px;
+    margin-top: 20px;
   }
 }
 
@@ -997,6 +1058,13 @@ p {
   .blog-list__link {
     margin-top: 20px;
     font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .blog-list__link {
+    font-size: 15px;
+    margin-top: 40px;
   }
 }
 

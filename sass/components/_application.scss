@@ -54,6 +54,9 @@
 
     outline: none;
   }
+  @media screen and(min-width: 1200px) {
+    padding: 10px 6px;
+  }
 }
 
 .application-list__contact {
@@ -72,5 +75,8 @@
     background-color: var(--background-accent);
     color: var(--secondary-text-color);
     outline: none;
+  }
+  @media screen and(min-width: 1200px) {
+    padding: 10px 6px;
   }
 }
