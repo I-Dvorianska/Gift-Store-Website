@@ -26,8 +26,13 @@
 }
 
 .footer-list__item:first-child {
-  @media screen and(max-width: 1199px) {
+  @media screen and(max-width: 735px) {
     margin-bottom: 10px;
+  }
+
+  @media screen and(max-width: 1199px) {
+    margin: 0px;
+    margin-right: 20px;
   }
 
   @media screen and(min-width: 1200px) {
