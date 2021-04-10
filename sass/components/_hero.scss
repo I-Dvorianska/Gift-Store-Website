@@ -50,6 +50,7 @@
 
   @media screen and(min-width: 736px) {
     display: inline-block;
+    margin-bottom: 20px;
 
     font-size: 15px;
     font-weight: 400;
@@ -61,7 +62,7 @@
 
 .hero__link {
   display: block;
-  width: 120px;
+  width: 122px;
   margin-left: auto;
   margin-right: auto;
   padding: 7px 4px;
@@ -74,17 +75,18 @@
   background-color: var(--accent-color);
   color: var(--secondary-text-color);
   border-radius: var(--button-radius);
+  transition: box-shadow 250ms var(--cubic), font-size 250ms var(--cubic);
 
   &:hover,
   &:focus {
     box-shadow: var(--button-shadow);
     font-size: 15px;
+    outline: none;
   }
 
   @media screen and(min-width: 736px) {
     margin: 0px;
-    margin-top: 20px;
-    padding: 10px 6px;
+    padding: 9px 6px;
   }
 }
 

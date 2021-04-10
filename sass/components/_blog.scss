@@ -128,11 +128,6 @@
   &:hover,
   &:focus {
     color: var(--hover-accent-color);
-    font-size: 15px;
-
-    @media screen and(min-width: 1200px) {
-      font-size: 17px;
-    }
   }
 
   @media screen and(min-width: 736px) {
@@ -216,7 +211,7 @@
 
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: var(--hover-accent-color);
   }
 
   @media screen and(min-width: 736px) {

@@ -140,11 +140,12 @@ p {
     transition: color 250ms var(--cubic), border-color 250ms var(--cubic), box-shadow 250ms var(--cubic), font-size 250ms var(--cubic), -webkit-box-shadow 250ms var(--cubic);
   }
   .navegation__link:hover, .navegation__link:focus {
-    color: #d86d16;
+    color: var(--accent-color);
     border-color: var(--hover-accent-color);
     -webkit-box-shadow: var(--button-shadow);
             box-shadow: var(--button-shadow);
     font-size: 16px;
+    cursor: pointer;
   }
 }
 
@@ -252,14 +253,14 @@ p {
     font-weight: 400;
     color: var(--primary-text-color);
   }
+  .header-list__link:hover, .header-list__link:focus {
+    color: var(--accent-color);
+  }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 736px) and (min-width: 1200px) {
   .header-list__link {
     font-size: 20px;
-  }
-  .header-list__link:hover, .header-list__link:focus {
-    color: var(--hover-accent-color);
   }
 }
 
@@ -349,6 +350,7 @@ p {
 @media screen and (min-width: 736px) {
   .hero__text {
     display: inline-block;
+    margin-bottom: 20px;
     font-size: 15px;
     font-weight: 400;
   }
@@ -362,7 +364,7 @@ p {
 
 .hero__link {
   display: block;
-  width: 120px;
+  width: 122px;
   margin-left: auto;
   margin-right: auto;
   padding: 7px 4px;
@@ -373,19 +375,23 @@ p {
   background-color: var(--accent-color);
   color: var(--secondary-text-color);
   border-radius: var(--button-radius);
+  -webkit-transition: font-size 250ms var(--cubic), -webkit-box-shadow 250ms var(--cubic);
+  transition: font-size 250ms var(--cubic), -webkit-box-shadow 250ms var(--cubic);
+  transition: box-shadow 250ms var(--cubic), font-size 250ms var(--cubic);
+  transition: box-shadow 250ms var(--cubic), font-size 250ms var(--cubic), -webkit-box-shadow 250ms var(--cubic);
 }
 
 .hero__link:hover, .hero__link:focus {
   -webkit-box-shadow: var(--button-shadow);
           box-shadow: var(--button-shadow);
   font-size: 15px;
+  outline: none;
 }
 
 @media screen and (min-width: 736px) {
   .hero__link {
     margin: 0px;
-    margin-top: 20px;
-    padding: 10px 6px;
+    padding: 9px 6px;
   }
 }
 
@@ -521,7 +527,7 @@ p {
   padding: 7px 4px;
   margin-left: auto;
   margin-right: auto;
-  width: 120px;
+  width: 122px;
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
@@ -535,6 +541,7 @@ p {
   -webkit-box-shadow: var(--button-shadow);
           box-shadow: var(--button-shadow);
   font-size: 15px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 736px) {
@@ -772,6 +779,7 @@ p {
 .application-list__find:hover, .application-list__find:focus {
   background-color: transparent;
   color: var(--background-accent);
+  cursor: pointer;
   outline: none;
 }
 
@@ -796,6 +804,7 @@ p {
   background-color: var(--background-accent);
   color: var(--secondary-text-color);
   outline: none;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1200px) {
@@ -947,13 +956,6 @@ p {
 
 .article__link:hover, .article__link:focus {
   color: var(--hover-accent-color);
-  font-size: 15px;
-}
-
-@media screen and (min-width: 1200px) {
-  .article__link:hover, .article__link:focus {
-    font-size: 17px;
-  }
 }
 
 @media screen and (min-width: 736px) {
@@ -1051,7 +1053,7 @@ p {
 }
 
 .blog-list__link:hover, .blog-list__link:focus {
-  color: var(--accent-color);
+  color: var(--hover-accent-color);
 }
 
 @media screen and (min-width: 736px) {
@@ -1122,6 +1124,12 @@ p {
 
 .footer-list__link {
   color: var(--primary-text-color);
+  -webkit-transition: color 250ms var(--cubic);
+  transition: color 250ms var(--cubic);
+}
+
+.footer-list__link:hover, .footer-list__link:focus {
+  color: var(--accent-color);
 }
 
 .navegation__logo--footer {

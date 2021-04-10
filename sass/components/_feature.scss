@@ -83,7 +83,7 @@
   padding: 7px 4px;
   margin-left: auto;
   margin-right: auto;
-  width: 120px;
+  width: 122px;
 
   font-size: 14px;
   font-weight: 400;
@@ -98,6 +98,7 @@
   &:focus {
     box-shadow: var(--button-shadow);
     font-size: 15px;
+    cursor: pointer;
   }
 
   @media screen and(min-width: 736px) {

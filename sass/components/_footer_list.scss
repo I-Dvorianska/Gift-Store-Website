@@ -37,6 +37,12 @@
 
 .footer-list__link {
   color: var(--primary-text-color);
+  transition: color 250ms var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .navegation__logo--footer {

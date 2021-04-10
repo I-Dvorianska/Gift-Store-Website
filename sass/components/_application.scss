@@ -51,6 +51,7 @@
   &:focus {
     background-color: transparent;
     color: var(--background-accent);
+    cursor: pointer;
 
     outline: none;
   }
@@ -75,6 +76,7 @@
     background-color: var(--background-accent);
     color: var(--secondary-text-color);
     outline: none;
+    cursor: pointer;
   }
   @media screen and(min-width: 1200px) {
     padding: 10px 6px;
