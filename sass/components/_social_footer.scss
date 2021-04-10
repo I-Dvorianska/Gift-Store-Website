@@ -8,6 +8,10 @@
 
 .social-list__item:not(:last-child) {
   margin-right: 6px;
+
+  @media screen and(min-width:1200px) {
+    margin-right: 10px;
+  }
 }
 
 .social-list__link {
@@ -34,4 +38,8 @@
   text-align: center;
 
   color: var(--primary-text-color);
+
+  @media screen and(min-width: 1200px) {
+    font-size: 14px;
+  }
 }

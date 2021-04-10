@@ -14,7 +14,7 @@
   display: none;
 
   @media screen and(min-width: 736px) {
-    display: block;
+    display: flex;
     padding-top: 21px;
   }
 }
@@ -26,7 +26,13 @@
 }
 
 .footer-list__item:first-child {
-  margin-bottom: 10px;
+  @media screen and(max-width: 1199px) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    margin-right: 50px;
+  }
 }
 
 .footer-list__link {
@@ -37,26 +43,14 @@
   display: inline-block;
   padding-bottom: 20px;
   margin: 0px auto;
+  text-align: center;
 
   border-bottom: 1px solid var(--primary-text-color);
   width: 200px;
   color: var(--accent-color);
-
-  @media screen and(max-width: 1199px) {
-    text-align: center;
-  }
 
   @media screen and(min-width: 736px) {
     width: 400px;
     margin: 0px;
   }
 }
-
-// .navegation__logo--footer::after {
-//   content: "";
-//   display: block;
-//   // border: 1px;
-//   width: 600px;
-//   height: 1px;
-//   background: var(--primary-text-color);
-// }
